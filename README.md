@@ -1,15 +1,15 @@
-# DTEK0066 exercise 1 template
+# DTEK0066 exercise 2 template
 
 ## Tehtävänanto
 
 Tehtävänanto löytyy Villestä. Osa tehtävistä tehdään Villessa ja osa palautetaan Gitlabin kautta. Linkki omaan repositorioon ilmoitetaan Villessä. 
 
-Forkkaa itsellesi tämä projekti pohjaksi. Huomaa, että kaikki harjoituskerran 1 tehtävät tehdään samaan projektiin eli pohja forkataan vain kerran.
+Forkkaa itsellesi tämä projekti pohjaksi. Huomaa, että kaikki harjoituskerran 2 tehtävät tehdään samaan projektiin eli pohja forkataan vain kerran.
 
 Main.java luokka sisältää ohjelman käynnistävän main-rutiinin. Muihin luokkiin ei tule main-rutiinia lisätä. Harjoitustyöpohja on rakennettu niin, 
 että Main-luokan ajamalla kaikki harjoitustehtävät suoritetaan. 
 
-Huomaa, että testit täytyy kuitenkin ajaa erikseen (tehtävä 3). 
+Huomaa, että testit täytyy kuitenkin ajaa erikseen (tehtävät 7 ja 8). 
 
 ## Tehtäviin vastaaminen
 
