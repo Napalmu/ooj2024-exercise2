@@ -52,7 +52,7 @@ public class Opiskelija {
      */
 
     public void setEtunimi(String etunimi) throws IllegalArgumentException{
-        if (etunimi == null || etunimi.equals("")) throw new IllegalArgumentException();
+        if (etunimi == null || etunimi.isEmpty()) throw new IllegalArgumentException();
         this.etunimi = etunimi;
     }
 
@@ -60,7 +60,7 @@ public class Opiskelija {
      * Loppuehto:
      */
     public void setSukunimi(String sukunimi) throws IllegalArgumentException{
-        if (sukunimi == null || sukunimi.equals("")) throw new IllegalArgumentException();
+        if (sukunimi == null || sukunimi.isEmpty()) throw new IllegalArgumentException();
         this.sukunimi = sukunimi;
     }
 

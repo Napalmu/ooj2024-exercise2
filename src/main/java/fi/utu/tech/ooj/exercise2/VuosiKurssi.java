@@ -42,6 +42,12 @@ public class VuosiKurssi {
     /* Tehtävä 5 Toteuta tämä rutiini
      * Tehtävä 6 Lisää lisääOpiskelijaTurvallisesti-rutiiniin poikkeuskäsittely
      *
+     * VuosilKurssi-luokkaan halutaan lisätä lisääOpiskelijaTurvallisesti-rutiini.
+     *
+     * Rutiini lisää opiskelijan vuosikurssille samoin kuin olemassa oleva lisaaOpiskelija-rutiini,
+     * mutta tämän rutiinin alkuehto on true. Toteuta rutiinin niin, että se turvaa aiemmassa tehtävässä
+     * määrittämäsi luokkainvariantin voimassaolon.
+     *
      * @.pre true
      * @.post true
      *
