@@ -11,7 +11,7 @@ public class VuosiKurssi {
      * Luokkainvariantti:
      * kurssinAloitusvuosi on suurempi kuin 1640 ja pienempi tai yhtäsuuri kuin kuluva vuosi.
      * Jokaisella vuosikurssilla on opinto-ohjaaja. Lisäksi opintoOhjaajanNimi ei ole null eikä tyhjä merkkijono.
-     * Sama Opiskelija-olio ei voi esiintyä opiskelijat-arraylistissä kuin kerran.
+     * Sama Opiskelija-olio ei voi esiintyä opiskelijat-arraylistissä kuin kerran. Eikä myöskään samalla opiskelijaNumerolla varustettu opiskelija-olio.
      *
      *
      */
@@ -61,7 +61,15 @@ public class VuosiKurssi {
      *
      */
     public void lisaaUusiOpiskelijaTurvallisesti(String etunimi, String sukunimi, String opiskelijaNumero, int syntymavuosi) {
-
+        if (etunimi == null || etunimi.isEmpty()) throw new IllegalArgumentException();
+        if (sukunimi == null || sukunimi.isEmpty()) throw new IllegalArgumentException();
+        if (opiskelijaNumero == null || opiskelijaNumero.isEmpty()) throw new IllegalArgumentException();
+        if (syntymavuosi < 1900 || syntymavuosi > java.time.LocalDateTime.now().getYear()) throw new IllegalArgumentException();
+        for (Opiskelija opiskelija : opiskelijat){
+            if(opiskelija.opiskelijaNumero = opiskelijaNumero) throw new IllegarArgumentException();
+        }
+        Opiskelija op = new Opiskelija(etunimi, sukunimi, opiskelijaNumero, syntymavuosi);
+        opiskelijat.add(op);
 
     }
 }
