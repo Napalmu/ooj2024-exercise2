@@ -20,7 +20,20 @@ public class Opiskelija {
      */
 
     /* Alkuehto:
+        etunimi != null
+        && !etunimi.isEmpty()
+        && sukunmi != null
+        && !sukunimi.isEmpty()
+        && opiskelijaNumero != null
+        && !opiskelijaNumero.isEmpty()
+        && syntymavuosi >= 1900
+        && syntymavuosi <= kuluva vuosi
+
      * Loppuehto:
+        this.etunimi.equals(etunimi)
+        this.sukunimi.equals(sukunimi)
+        this.opiskelijaNumero.equals(opiskelijaNumero)
+        this.syntymavuosi.equals(syntymavuosi)
      */
 
     /*KONSTRUKTORI*/
@@ -52,7 +65,9 @@ public class Opiskelija {
      */
 
      /* Alkuehto:
+      etunimi != null && !etunimi.isEmpty()
      * Loppuehto:
+      this.etunimi.equals(etunimi)
      */
 
     public void setEtunimi(String etunimi) throws IllegalArgumentException{
@@ -61,7 +76,9 @@ public class Opiskelija {
     }
 
     /* Alkuehto:
+    sukunmi != null && !sukunimi.isEmpty()
      * Loppuehto:
+    this.sukunimi.equals(sukunimi)
      */
     public void setSukunimi(String sukunimi) throws IllegalArgumentException{
         if (sukunimi == null || sukunimi.isEmpty()) throw new IllegalArgumentException();
@@ -69,14 +86,18 @@ public class Opiskelija {
     }
 
     /* Alkuehto:
+    opiskelijaNumero != null && !opiskelijaNumero.isEmpty()
      * Loppuehto:
+      this.opiskelijaNumero.equals(opiskelijaNumero)
      */
     public void setOpiskelijaNumero(String opiskelijaNumero) {
         this.opiskelijaNumero = opiskelijaNumero;
     }
 
     /* Alkuehto:
+    syntymavuosi >= 1900 && syntymavuosi <= java.time.LocalDateTime.now().getYear()
      * Loppuehto:
+      this.syntymavuosi.equals(syntymavuosi)
      */
     public void setSyntymavuosi(int syntymavuosi) {
         this.syntymavuosi = syntymavuosi;

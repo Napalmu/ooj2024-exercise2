@@ -38,7 +38,10 @@ public class VuosiKurssi {
      * Määrittele  alku- ja loppuehdot lisaaOpiskelija rutiinille
      *
      * Alkuehto:
+     * opiskelija != null
+     *
      * Loppuehto:
+     * Opiskelija lisättiin opiskelijat ArrayListiin onnistuneesti.
      */
     public void lisaaOpiskelija(Opiskelija opiskelija) {
         this.opiskelijat.add(opiskelija);
