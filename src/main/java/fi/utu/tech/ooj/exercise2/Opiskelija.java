@@ -5,6 +5,10 @@ public class Opiskelija {
     /* Tehtävä 3 Määrittele luokkainvariantti
      *
      * Luokkainvariantti:
+     * etunimi, sukunimi ja opiskelijaNumero eivät ole tyhjiä merkkijonoja tai null -arvoisia. OpiskelijaNumero on lisäksi voimassa.
+     * syntymavuosi >= 1900 && syntymavuosi <= kuluva vuosi
+     *
+     *
      */
     private String etunimi;
     private String sukunimi;

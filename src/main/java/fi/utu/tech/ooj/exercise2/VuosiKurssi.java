@@ -9,6 +9,11 @@ public class VuosiKurssi {
     /* Tehtävä 3 Määrittele luokkainvariantti
      *
      * Luokkainvariantti:
+     * kurssinAloitusvuosi on suurempi kuin 1640 ja pienempi tai yhtäsuuri kuin kuluva vuosi.
+     * Jokaisella vuosikurssilla on opinto-ohjaaja. Lisäksi opintoOhjaajanNimi ei ole null eikä tyhjä merkkijono.
+     * Sama Opiskelija-olio ei voi esiintyä opiskelijat-arraylistissä kuin kerran.
+     *
+     *
      */
     private int kurssinAloitusvuosi;
     private String opintoOhjaajanNimi;
