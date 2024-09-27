@@ -61,15 +61,14 @@ public class VuosiKurssi {
      *
      */
     public void lisaaUusiOpiskelijaTurvallisesti(String etunimi, String sukunimi, String opiskelijaNumero, int syntymavuosi) {
-        if (etunimi == null || etunimi.isEmpty()) throw new IllegalArgumentException();
-        if (sukunimi == null || sukunimi.isEmpty()) throw new IllegalArgumentException();
-        if (opiskelijaNumero == null || opiskelijaNumero.isEmpty()) throw new IllegalArgumentException();
-        if (syntymavuosi < 1900 || syntymavuosi > java.time.LocalDateTime.now().getYear()) throw new IllegalArgumentException();
-        for (Opiskelija opiskelija : opiskelijat){
-            if(opiskelija.opiskelijaNumero = opiskelijaNumero) throw new IllegarArgumentException();
-        }
-        Opiskelija op = new Opiskelija(etunimi, sukunimi, opiskelijaNumero, syntymavuosi);
-        opiskelijat.add(op);
+            if (etunimi == null || etunimi.isEmpty()) throw new InvalidStudentDataException("Opiskelijan etunimi ei voi olla null tai tyhjä");
+            if (sukunimi == null || sukunimi.isEmpty()) throw new InvalidStudentDataException("Opiskelijan sukunimi ei voi olla null tai tyhjä");
+            if (opiskelijaNumero == null || opiskelijaNumero.isEmpty()) throw new InvalidStudentDataException("Opiskelijan opiskelijanumero ei voi olla null tai tyhjä");
+            if (syntymavuosi < 1900 || syntymavuosi > java.time.LocalDateTime.now().getYear()) throw new InvalidStudentDataException("Opiskelijan syntymävuoden pitää olla 1900 ja kuluvan vuoden välillä");
+            for (Opiskelija opiskelija : opiskelijat){
+                if(opiskelija.opiskelijaNumero = opiskelijaNumero) throw new InvalidStudentDataException("Opiskelija on jo olemassa");
+                Opiskelija op = new Opiskelija(etunimi, sukunimi, opiskelijaNumero, syntymavuosi);
+                opiskelijat.add(op);
 
-    }
+            }
 }

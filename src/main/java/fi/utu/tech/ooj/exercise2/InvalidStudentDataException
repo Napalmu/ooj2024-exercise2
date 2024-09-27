@@ -1,0 +1,5 @@
+class InvalidStudentDataException extends Exception{
+    public InvalidStudentDataException(String viesti) {
+        super("Opiskelijaa ei voitu lisätä rikkomatta invarianttia" + " " + viesti);
+    }
+}
